@@ -8,7 +8,7 @@ function App() {
   const [flightData, setFlightData] = useState([])
   const submit = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/flights', {
+      const response = await axios.get('https://aegis-convent-backend.vercel.app/api/flights', {
         params: {
           source: source.trim().toLowerCase(),
           destination: destination.trim().toLowerCase(),
